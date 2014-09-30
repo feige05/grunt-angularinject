@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('angularinject', 'Inject angular components into your source code.', function() {
     this.requiresConfig(['angularinject', this.target, 'src']);
+    this.requiresConfig(['angularinject', this.target, 'cwd']);
     // Extend the options object with the entire data object (instead of just .src) for backward compatibility.
     require('../lib/angularinject')(this.options(this.data));
   });

@@ -47,7 +47,8 @@ grunt.initConfig({
   angularinject: {
     options: {},
     app: {
-      'src': ['index.html'],
+      'src': ['app/index.html'],
+      'cwd':'app/scripts/controllers'
     },
   },
 });
